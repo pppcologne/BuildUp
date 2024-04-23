@@ -1,0 +1,332 @@
+@media screen and (display-mode: standalone) {
+    header{
+        height: 80px;
+        padding-top: 48px;
+    }
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    padding-top: 0;
+    background-color: #E5E5E5;
+}
+
+*{
+    font-family: "Cousine", monospace;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: clip;
+}
+
+h1{
+    font-family: "Cousine", monospace;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #E5E5E5;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.titleContainer {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    padding-top: 5vh;
+    width: 100vw;
+    align-self: center;
+    background-color: #E5E5E5;
+    margin: 0;
+    z-index: 201;
+}
+
+
+
+#navbar{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 10vh;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.navButton{
+    background-color: #EFEFEF;
+    border: none;
+    font-size: large;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.navButton:hover{
+    background-color: rgb(233, 233, 233);
+}
+
+
+#view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+
+.routine{
+    width: 100vw;
+    height: 25%;
+    background-color: #EFEFEF;
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tableContainer{
+    background-color: #E5E5E5;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 35%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.routineTable{
+    width: 80%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border-bottom: none;
+    border-left: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+td:first-child, th:first-child {
+    border-left: none;
+}
+
+   
+
+.routineTableCellTop{
+    border-bottom: 1px solid black;
+    padding-right: 15px;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    width: 85%;
+    height: 30%;
+}
+
+.routineButton{
+    background-color: #EE2D37;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    color: black;
+    width: 30%;
+    height: 70%;
+}
+
+th{
+    width: 30%;
+}
+
+.changePositionDownButton{
+    width: 20px;
+    height: 20px;
+    margin-top: 13px;
+    margin-right: 20px;
+    position: absolute;
+    right: 0;
+}
+
+.changePositionUpButton{
+    width: 20px;
+    height: 20px;
+    margin-top: 13px;
+    margin-right: 50px;
+    position: absolute;
+    right: 0;
+}
+
+.setTh{
+    width: 10%;
+}
+
+.setInput, .logButton{
+    width: 50%;
+    height: 21px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    background-color: #F39EA2;
+    text-align: center;
+}
+.setInput{
+    border-radius: 4px;
+    color:black;
+    width: 70px;
+    height: 30px;
+}
+.timeFrameSelector{
+    width: 25%;
+    align-self: right;
+    margin-left: 70%;
+    margin-top: 10px;
+}
+
+.logCell{
+    height: 100%;
+}
+
+.logButton{
+    background-color: #EE2D37;
+    text-decoration: none;
+    color: black;
+    width: 80%;
+    height: 30px;
+
+}
+
+.workoutView, .routineView, .dashboardView{
+    height: 100vh;
+    width: 100%;
+    background-color: #ffff; /* Add this line */
+
+}
+
+.workoutHeadContainer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    justify-content: space-around;
+    width: 100%;
+    height: 15%;
+    background-color: #EFEFEF;
+    padding-left: 3%;
+    padding-bottom: 5px;
+}
+
+.timer{
+    margin: 0px;
+}
+
+.exerciseContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.exerciseDiv{
+    background-color: #EFEFEF;
+    width: 100%;
+    padding-left: 3%;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+
+
+.refreshButton {
+    position: fixed;
+    top: 50px;
+    height: 30px;
+    width: 70px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.setTableContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.setTable{
+    width: 90%;
+    border-collapse: collapse;
+}
+
+.exerciseMuscles{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.muscleContainer{
+    margin-right: 10px;
+    height: 100%;
+    padding: 4px;
+    background-color: #EE2D37;
+}
+
+.finishContainer{
+    width: 100%;
+    height: 200px;
+    background-color: #E5E5E5;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+.finishButton{
+    width: 200px;
+    height:50px;
+    background-color: #EE2D37;
+    color: black;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.statContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #EFEFEF;
+    justify-content: space-around;
+}
+
+.stat{
+    width: 40%;
+    margin: 10px;
+    background-color: #E5E5E5;
+    padding: 5px;
+    border-radius: 1px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

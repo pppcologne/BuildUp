@@ -1,0 +1,732 @@
+{
+  "users": [
+    {
+      "userId": 1,
+      "username": "fitnessGuy123",
+      "name": "Paul",
+      "hashedPassword": "iq2318egdueoif98wyeehf",
+      "currentRoutine": 2,
+      "currentDay": 0,
+      "workoutHistory": [],
+      "workoutStats": {
+        "totalSessions": 9,
+        "totalWeight": 2727.5,
+        "totalWorkoutTime": "00:05:29",
+        "bestSetIdsForExercises": {
+          "1": 33,
+          "2": 18,
+          "3": 21,
+          "4": 24
+        },
+        "averageOneRepMaxChangePercentage": {},
+        "totalTime": "00:00:00"
+      },
+      "averageOneRepMax": {}
+    }
+  ],
+  "exercises": [
+    {
+      "exerciseId": 1,
+      "name": "benchpress",
+      "type": "Barbell",
+      "muscles": [
+        "Chest",
+        "Front Delt"
+      ],
+      "description": "The bench press is a compound exercise that builds strength and muscle in the chest and front deltoids. It is performed by lying on a bench and pressing a Barbell away from the body."
+    },
+    {
+      "exerciseId": 2,
+      "name": "lateral Raises",
+      "type": "Dumbbell",
+      "muscles": [
+        "Side Delt"
+      ],
+      "description": "The lateral raise is an isolation exercise that builds strength and muscle in the side deltoids. It is performed by raising dumbbells out to the side of the body."
+    },
+    {
+      "exerciseId": 3,
+      "name": "squats",
+      "type": "Barbell",
+      "muscles": [
+        "Quadriceps",
+        "Glutes"
+      ],
+      "description": "Squats are a compound exercise that primarily target the quadriceps and glutes. They are performed by bending the knees and lowering the hips while keeping the back straight."
+    },
+    {
+      "exerciseId": 4,
+      "name": "deadlifts",
+      "type": "Barbell",
+      "muscles": [
+        "Hamstrings",
+        "Lower Back"
+      ],
+      "description": "Deadlifts are a compound exercise that target the hamstrings and lower back. They are performed by lifting a Barbell from the ground while keeping the back straight."
+    }
+  ],
+  "sets": [
+    {
+      "setId": 1,
+      "userId": 1,
+      "exerciseId": 1,
+      "date": "17/04/2024",
+      "weight": 50,
+      "reps": 8,
+      "oneRepMax": 63.2,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 2,
+      "userId": 1,
+      "exerciseId": 1,
+      "date": "17/04/2024",
+      "weight": 52.5,
+      "reps": 7,
+      "oneRepMax": 64.62750000000001,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 3,
+      "userId": 1,
+      "exerciseId": 1,
+      "date": "17/04/2024",
+      "weight": 57.5,
+      "reps": 8,
+      "oneRepMax": 72.68,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 4,
+      "userId": 1,
+      "exerciseId": 2,
+      "date": "17/04/2024",
+      "weight": 47.5,
+      "reps": 8,
+      "oneRepMax": 60.04,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 5,
+      "userId": 1,
+      "exerciseId": 2,
+      "date": "17/04/2024",
+      "weight": 60,
+      "reps": 8,
+      "oneRepMax": 75.84,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 6,
+      "userId": 1,
+      "exerciseId": 2,
+      "date": "17/04/2024",
+      "weight": 62.5,
+      "reps": 8,
+      "oneRepMax": 79,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 7,
+      "userId": 1,
+      "exerciseId": 3,
+      "date": "17/04/2024",
+      "weight": 50,
+      "reps": 8,
+      "oneRepMax": 63.2,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 8,
+      "userId": 1,
+      "exerciseId": 3,
+      "date": "17/04/2024",
+      "weight": 60,
+      "reps": 7,
+      "oneRepMax": 73.86,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 9,
+      "userId": 1,
+      "exerciseId": 3,
+      "date": "17/04/2024",
+      "weight": 60,
+      "reps": 8,
+      "oneRepMax": 75.84,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 10,
+      "userId": 1,
+      "exerciseId": 4,
+      "date": "17/04/2024",
+      "weight": 50,
+      "reps": 8,
+      "oneRepMax": 63.2,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 11,
+      "userId": 1,
+      "exerciseId": 4,
+      "date": "17/04/2024",
+      "weight": 60,
+      "reps": 8,
+      "oneRepMax": 75.84,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 12,
+      "userId": 1,
+      "exerciseId": 4,
+      "date": "17/04/2024",
+      "weight": 97.5,
+      "reps": 8,
+      "oneRepMax": 123.24,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 13,
+      "userId": 1,
+      "exerciseId": 1,
+      "date": "18/04/2024",
+      "weight": 67.5,
+      "reps": 8,
+      "oneRepMax": 85.32000000000001,
+      "oneRepMaxChangePercentage": 17
+    },
+    {
+      "setId": 14,
+      "userId": 1,
+      "exerciseId": 1,
+      "date": "18/04/2024",
+      "weight": 70,
+      "reps": 8,
+      "oneRepMax": 88.48,
+      "oneRepMaxChangePercentage": 21
+    },
+    {
+      "setId": 15,
+      "userId": 1,
+      "exerciseId": 1,
+      "date": "18/04/2024",
+      "weight": 75,
+      "reps": 8,
+      "oneRepMax": 94.8,
+      "oneRepMaxChangePercentage": 30
+    },
+    {
+      "setId": 16,
+      "userId": 1,
+      "exerciseId": 2,
+      "date": "18/04/2024",
+      "weight": 70,
+      "reps": 8,
+      "oneRepMax": 88.48,
+      "oneRepMaxChangePercentage": 12
+    },
+    {
+      "setId": 17,
+      "userId": 1,
+      "exerciseId": 2,
+      "date": "18/04/2024",
+      "weight": 72.5,
+      "reps": 8,
+      "oneRepMax": 91.64,
+      "oneRepMaxChangePercentage": 16
+    },
+    {
+      "setId": 18,
+      "userId": 1,
+      "exerciseId": 2,
+      "date": "18/04/2024",
+      "weight": 77.5,
+      "reps": 8,
+      "oneRepMax": 97.96000000000001,
+      "oneRepMaxChangePercentage": 24
+    },
+    {
+      "setId": 19,
+      "userId": 1,
+      "exerciseId": 3,
+      "date": "18/04/2024",
+      "weight": 70,
+      "reps": 8,
+      "oneRepMax": 88.48,
+      "oneRepMaxChangePercentage": 16
+    },
+    {
+      "setId": 20,
+      "userId": 1,
+      "exerciseId": 3,
+      "date": "18/04/2024",
+      "weight": 70,
+      "reps": 8,
+      "oneRepMax": 88.48,
+      "oneRepMaxChangePercentage": 16
+    },
+    {
+      "setId": 21,
+      "userId": 1,
+      "exerciseId": 3,
+      "date": "18/04/2024",
+      "weight": 85,
+      "reps": 8,
+      "oneRepMax": 107.44,
+      "oneRepMaxChangePercentage": 41
+    },
+    {
+      "setId": 22,
+      "userId": 1,
+      "exerciseId": 4,
+      "date": "18/04/2024",
+      "weight": 97.5,
+      "reps": 8,
+      "oneRepMax": 123.24,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 23,
+      "userId": 1,
+      "exerciseId": 4,
+      "date": "18/04/2024",
+      "weight": 97.5,
+      "reps": 13,
+      "oneRepMax": 139.32750000000001,
+      "oneRepMaxChangePercentage": 13
+    },
+    {
+      "setId": 24,
+      "userId": 1,
+      "exerciseId": 4,
+      "date": "18/04/2024",
+      "weight": 97.5,
+      "reps": 18,
+      "oneRepMax": 155.41500000000002,
+      "oneRepMaxChangePercentage": 26
+    },
+    {
+      "setId": 25,
+      "userId": 1,
+      "exerciseId": 1,
+      "date": "18/04/2024",
+      "weight": 75,
+      "reps": 8,
+      "oneRepMax": 94.8,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 26,
+      "userId": 1,
+      "exerciseId": 1,
+      "date": "18/04/2024",
+      "weight": 75,
+      "reps": 8,
+      "oneRepMax": 94.8,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 27,
+      "userId": 1,
+      "exerciseId": 3,
+      "date": "18/04/2024",
+      "weight": 85,
+      "reps": 8,
+      "oneRepMax": 107.44,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 28,
+      "userId": 1,
+      "exerciseId": 3,
+      "date": "18/04/2024",
+      "weight": 85,
+      "reps": 8,
+      "oneRepMax": 107.44,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 29,
+      "userId": 1,
+      "exerciseId": 3,
+      "date": "18/04/2024",
+      "weight": 85,
+      "reps": 8,
+      "oneRepMax": 107.44,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 30,
+      "userId": 1,
+      "exerciseId": 4,
+      "date": "18/04/2024",
+      "weight": 97.5,
+      "reps": 18,
+      "oneRepMax": 155.41500000000002,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 31,
+      "userId": 1,
+      "exerciseId": 4,
+      "date": "18/04/2024",
+      "weight": 97.5,
+      "reps": 18,
+      "oneRepMax": 155.41500000000002,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 32,
+      "userId": 1,
+      "exerciseId": 4,
+      "date": "18/04/2024",
+      "weight": 97.5,
+      "reps": 18,
+      "oneRepMax": 155.41500000000002,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 33,
+      "userId": 1,
+      "exerciseId": 1,
+      "date": "18/04/2024",
+      "weight": 72.5,
+      "reps": 12,
+      "oneRepMax": 101.21,
+      "oneRepMaxChangePercentage": 6
+    },
+    {
+      "setId": 34,
+      "userId": 1,
+      "exerciseId": 1,
+      "date": "18/04/2024",
+      "weight": 75,
+      "reps": 5,
+      "oneRepMax": 87.375,
+      "oneRepMaxChangePercentage": -8
+    },
+    {
+      "setId": 35,
+      "userId": 1,
+      "exerciseId": 1,
+      "date": "22/04/2024",
+      "weight": 75,
+      "reps": 5,
+      "oneRepMax": 87.375,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 36,
+      "userId": 1,
+      "exerciseId": 1,
+      "date": "22/04/2024",
+      "weight": 75,
+      "reps": 5,
+      "oneRepMax": 87.375,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 37,
+      "userId": 1,
+      "exerciseId": 1,
+      "date": "22/04/2024",
+      "weight": 75,
+      "reps": 5,
+      "oneRepMax": 87.375,
+      "oneRepMaxChangePercentage": 0
+    }
+  ],
+  "workoutHistory": [
+    {
+      "workoutID": 1,
+      "userId": 1,
+      "date": "20/08/2021",
+      "duration": "00:00:49",
+      "sets": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "averageStrengthIncrease": ""
+    },
+    {
+      "workoutID": 2,
+      "userId": 1,
+      "date": "20/04/2023",
+      "duration": "00:00:47",
+      "sets": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "workoutID": 3,
+      "userId": 1,
+      "date": "10/01/2024",
+      "duration": "00:00:47",
+      "sets": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "workoutID": 4,
+      "userId": 1,
+      "date": "18/02/2024",
+      "duration": "00:00:47",
+      "sets": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "workoutID": 5,
+      "userId": 1,
+      "date": "20/03/2024",
+      "duration": "00:00:47",
+      "sets": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "workoutID": 6,
+      "userId": 1,
+      "date": "10/04/2024",
+      "duration": "00:00:47",
+      "sets": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "workoutID": 7,
+      "userId": 1,
+      "date": "12/04/2024",
+      "duration": "00:00:47",
+      "sets": [
+        13,
+        14,
+        15,
+        16,
+        23
+      ]
+    },
+    {
+      "workoutID": 8,
+      "userId": 1,
+      "date": "15/04/2024",
+      "duration": "00:00:47",
+      "sets": [
+        13,
+        14,
+        15,
+        12,
+        23,
+        11
+      ]
+    },
+    {
+      "workoutID": 9,
+      "userId": 1,
+      "date": "18/04/2024",
+      "duration": "00:00:05",
+      "sets": [
+        25,
+        26,
+        12,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "workoutID": 10,
+      "userId": 1,
+      "date": "18/04/2024",
+      "duration": "00:02:26",
+      "sets": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    {
+      "workoutID": 11,
+      "userId": 1,
+      "date": "18/04/2024",
+      "duration": "00:00:19",
+      "sets": []
+    },
+    {
+      "workoutID": 12,
+      "userId": 1,
+      "date": "18/04/2024",
+      "duration": "00:00:01",
+      "sets": []
+    },
+    {
+      "workoutID": 13,
+      "userId": 1,
+      "date": "18/04/2024",
+      "duration": "00:00:14",
+      "sets": []
+    },
+    {
+      "workoutID": 14,
+      "userId": 1,
+      "date": "18/04/2024",
+      "duration": "00:00:33",
+      "sets": [
+        33,
+        34
+      ]
+    },
+    {
+      "workoutID": 15,
+      "userId": 1,
+      "date": "22/04/2024",
+      "duration": "00:00:15",
+      "sets": [
+        35,
+        36,
+        37
+      ],
+      "averageStrengthIncrease": ""
+    }
+  ],
+  "routines": [
+    {
+      "routineId": 1,
+      "name": "Push-Pull-Legs",
+      "description": "Push-Pull-Legs is designed to split up your workouts into the primary muscles of your body.",
+      "workouts": [
+        {
+          "workoutName": "Push",
+          "exercises": [
+            1,
+            2
+          ]
+        },
+        {
+          "workoutName": "Pull",
+          "exercises": [
+            3,
+            4
+          ]
+        },
+        {
+          "workoutName": "Legs",
+          "exercises": [
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "routineId": 2,
+      "name": "Full Body",
+      "description": "This routine is designed to work all major muscle groups in a single workout.",
+      "workouts": [
+        {
+          "workoutName": "Full Body",
+          "exercises": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "routineId": 3,
+      "name": "Bro Split",
+      "description": "Average Gym bro split",
+      "workouts": [
+        {
+          "workoutName": "Chest",
+          "exercises": [
+            1,
+            2
+          ]
+        },
+        {
+          "workoutName": "Back",
+          "exercises": [
+            3,
+            4
+          ]
+        },
+        {
+          "workoutName": "Arms",
+          "exercises": [
+            3,
+            4
+          ]
+        },
+        {
+          "workoutName": "Shoulders",
+          "exercises": [
+            3,
+            4
+          ]
+        },
+        {
+          "workoutName": "Legs",
+          "exercises": [
+            3,
+            4
+          ]
+        }
+      ]
+    }
+  ]
+}
