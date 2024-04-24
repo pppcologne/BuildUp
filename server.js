@@ -37,3 +37,14 @@ app.post('/database', (req, res) => {
     }
   });
 });
+
+app.post('/github-webhook', (req, res) => {
+  // Verify that the request is from GitHub
+  if (req.headers['x-hub-signature-256'] === crypto.createHmac('sha256', helloworld).update(JSON.stringify(req.body)).digest('hex')) {
+    // Pull the latest changes and restart the application
+    execSync('git pull origin main && npm install && pm2 restart main.js');
+    res.sendStatus(200);
+  } else {
+    res.sendStatus(403);
+  }
+});
