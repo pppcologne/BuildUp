@@ -4,14 +4,14 @@
       "userId": 1,
       "username": "fitnessGuy123",
       "name": "Paul",
-      "hashedPassword": "iq2318egdueoif98wyeehf",
+      "hashedPassword": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
       "currentRoutine": 2,
       "currentDay": 0,
       "workoutHistory": [],
       "workoutStats": {
-        "totalSessions": 9,
+        "totalSessions": 11,
         "totalWeight": 2727.5,
-        "totalWorkoutTime": "00:05:29",
+        "totalWorkoutTime": "00:05:34",
         "bestSetIdsForExercises": {
           "1": 33,
           "2": 18,
@@ -22,6 +22,16 @@
         "totalTime": "00:00:00"
       },
       "averageOneRepMax": {}
+    },
+    {
+      "userId": 2,
+      "username": "newUser69",
+      "hashedPassword": "11d4ddc357e0822968dbfd226b6e1c2aac018d076a54da4f65e1dc8180684ac3",
+      "workoutStats": {
+        "totalSessions": 0,
+        "totalWorkoutTime": "00:00:00",
+        "totalWeight": 0
+      }
     }
   ],
   "exercises": [
@@ -435,6 +445,36 @@
       "reps": 5,
       "oneRepMax": 87.375,
       "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 38,
+      "userId": 1,
+      "exerciseId": 1,
+      "date": "28/04/2024",
+      "weight": 75,
+      "reps": 5,
+      "oneRepMax": 87.375,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 39,
+      "userId": 1,
+      "exerciseId": 1,
+      "date": "28/04/2024",
+      "weight": 75,
+      "reps": 5,
+      "oneRepMax": 87.375,
+      "oneRepMaxChangePercentage": 0
+    },
+    {
+      "setId": 40,
+      "userId": 1,
+      "exerciseId": 1,
+      "date": "28/04/2024",
+      "weight": 75,
+      "reps": 5,
+      "oneRepMax": 87.375,
+      "oneRepMaxChangePercentage": 0
     }
   ],
   "workoutHistory": [
@@ -638,6 +678,22 @@
         36,
         37
       ],
+      "averageStrengthIncrease": ""
+    },
+    {
+      "workoutID": 16,
+      "userId": 1,
+      "date": "28/04/2024",
+      "duration": "00:00:03",
+      "sets": [],
+      "averageStrengthIncrease": ""
+    },
+    {
+      "workoutID": 17,
+      "userId": 1,
+      "date": "29/04/2024",
+      "duration": "00:00:02",
+      "sets": [],
       "averageStrengthIncrease": ""
     }
   ],

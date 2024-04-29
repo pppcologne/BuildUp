@@ -3,8 +3,6 @@ const LinkedList = require('./linkedList.js');
 
 // Function to find the last set for a given exerciseId
 function findLastSet(exerciseId, data) {
-
-
     var lastSet;
     // Filter the sets for the given exerciseId
     const setsForExercise = data.sets.filter(set => set.exerciseId === exerciseId);
