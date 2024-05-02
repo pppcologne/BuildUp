@@ -137,10 +137,10 @@ function renderSettingsView(){
 
 //button to refresh page
 const refreshButton = document.createElement("button")
-// refreshButton.innerHTML = "Refresh"
-// refreshButton.className = "refreshButton"
-// refreshButton.addEventListener("click",() => {window.location.href=window.location.href}, false)
-// document.body.appendChild(refreshButton)
+refreshButton.innerHTML = "Refresh"
+refreshButton.className = "refreshButton"
+refreshButton.addEventListener("click",() => {window.location.href=window.location.href}, false)
+document.body.appendChild(refreshButton)
 
 //button to remove Current User page
 const removeCurrentUser = document.createElement("button")

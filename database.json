@@ -55,6 +55,18 @@
         "totalWorkoutTime": "00:00:00",
         "totalWeight": 0
       }
+    },
+    {
+      "userId": 5,
+      "username": "test",
+      "hashedPassword": "ae5deb822e0d71992900471a7199d0d95b8e7c9d05c40a8245a281fd2c1d6684",
+      "currentRoutine": 1,
+      "currentDay": 0,
+      "workoutStats": {
+        "totalSessions": 0,
+        "totalWorkoutTime": "00:00:00",
+        "totalWeight": 0
+      }
     }
   ],
   "exercises": [
