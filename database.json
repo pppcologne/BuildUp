@@ -27,6 +27,29 @@
       "userId": 2,
       "username": "newUser69",
       "hashedPassword": "11d4ddc357e0822968dbfd226b6e1c2aac018d076a54da4f65e1dc8180684ac3",
+      "currentRoutine": 1,
+      "workoutStats": {
+        "totalSessions": 0,
+        "totalWorkoutTime": "00:00:00",
+        "totalWeight": 0
+      }
+    },
+    {
+      "userId": 3,
+      "username": "testuser",
+      "hashedPassword": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
+      "currentRoutine": 1,
+      "currentDay": 0,
+      "workoutStats": {
+        "totalSessions": 0,
+        "totalWorkoutTime": "00:00:00",
+        "totalWeight": 0
+      }
+    },
+    {
+      "userId": 4,
+      "username": "testUser",
+      "hashedPassword": "5772527c5398c3b1d9999c5a9388823c454126d8a387a32ce461ad7cfc13f656",
       "workoutStats": {
         "totalSessions": 0,
         "totalWorkoutTime": "00:00:00",

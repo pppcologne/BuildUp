@@ -66,6 +66,13 @@ function renderHeader(){
 
     titleContainer.appendChild(title)
     document.body.appendChild(titleContainer)
+
+
+    const settingsDropDown = document.createElement("select")
+    settingsDropDown.innerHTML = "Settings"
+    settingsDropDown.className = "settingsDropDown"
+    
+
 }
 
 renderHeader()

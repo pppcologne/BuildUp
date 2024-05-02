@@ -19,7 +19,6 @@ function findLastSet(exerciseId, data) {
 
 // Function to the find last workout
 async function findLastWorkout(userId, data) {
-    console.log(data.workoutHistory)
     var lastWorkout;
     const workoutsForUser = data.workoutHistory.filter(workout => workout.userId === 2);
     if (workoutsForUser.length == 0) {
@@ -52,7 +51,6 @@ export async function renderWorkoutView(){
         }
         if (workoutDurationMinutes % 60 == 0 && workoutDurationMinutes != 0) {
             workoutDurationHours += 1
-            console.log(0%60)
             workoutDurationMinutes = 0
         }
         workoutDurationOutput = workoutDurationHours.toString().padStart(2, '0') + ":" + workoutDurationMinutes.toString().padStart(2, '0') + ":" + workoutDurationSeconds.toString().padStart(2, '0')
@@ -70,17 +68,8 @@ export async function renderWorkoutView(){
     const currentWorkout = routineData.workouts[currentDay]
     
 
-    var newWorkout = {
-        "workoutID": data.workoutHistory.length + 1,
-        "userId": currentUserId,
-        "date": new Date().toLocaleDateString(),
-        "duration": 0,
-        "sets": [],
-        "averageStrengthIncrease": ""
-    }
 
     view.innerHTML = ""
-    console.log("rendering workout view")
     const workoutView = document.createElement("div")
     workoutView.className = "workoutView"
 
@@ -124,11 +113,19 @@ export async function renderWorkoutView(){
 
 
     let workoutOrder = new LinkedList();
-    console.log(currentWorkout.exercises)
     for (let i = 0; i < currentWorkout.exercises.length; i++){
         workoutOrder.append(currentWorkout.exercises[i])
     }
-    
+    let newWorkout = {
+        "workoutID": data.workoutHistory.length + 1,
+        "userId": currentUserId,
+        "date": new Date().toLocaleDateString(),
+        "duration": 0,
+        "sets": [],
+        "averageStrengthIncrease": ""
+    }
+
+    localStorage.setItem('currentWorkout', JSON.stringify(newWorkout))
     workoutView.appendChild(generateExercises(workoutOrder, data, currentUserId))
 
    
@@ -200,6 +197,10 @@ export async function renderWorkoutView(){
 
 
 function generateExercises(linkedList, data, currentUserId){
+    let newWorkout = JSON.parse(localStorage.getItem('currentWorkout'))
+    const userData = data.users.find(user => user.userId === currentUserId)
+
+
     let exerciseContainer = document.createElement("div")
     exerciseContainer.className = "exerciseContainer"
 
@@ -222,11 +223,10 @@ function generateExercises(linkedList, data, currentUserId){
         let thisNode = currentNode;
         changePositionDownButton.addEventListener("click", () => {
             if (thisNode != null && thisNode.next != null){
-                console.log(linkedList.toArray())
                 thisNode.moveNodeDown()
-                console.log(linkedList.toArray())
 
 
+                localStorage.setItem('currentWorkout', JSON.stringify(newWorkout))
                 exerciseContainer.replaceWith(generateExercises(linkedList, data, currentUserId))
             }
             
@@ -235,11 +235,9 @@ function generateExercises(linkedList, data, currentUserId){
 
         changePositionUpButton.addEventListener("click", () => {
             if (thisNode != null && thisNode.prev != null){
-                console.log(linkedList.toArray())
                 thisNode.moveNodeUp()
-                console.log(linkedList.toArray())
 
-
+                localStorage.setItem('currentWorkout', JSON.stringify(newWorkout))
                 exerciseContainer.replaceWith(generateExercises(linkedList, data, currentUserId))
             }
             
@@ -344,9 +342,6 @@ function generateExercises(linkedList, data, currentUserId){
                 logButton.disabled = true
                 const weight = weightInput.value
                 const reps = repsInput.value
-                console.log("logging set")
-                console.log(weight)
-                console.log(reps)
                 const newSetOneRepMax = weight * (1 + (0.033 * reps))
                 const newSetId = data.sets.length + 1
 
@@ -372,14 +367,11 @@ function generateExercises(linkedList, data, currentUserId){
                 //Check if this set was a Personal Record
 
                 //Grab the weights used for the previous PR set
-                console.log(userData.workoutStats.bestSetIdsForExercises)
-                console.log(exerciseId)
+
                 let exerciseBestSet = userData.workoutStats.bestSetIdsForExercises[exerciseId]
                 if (exerciseBestSet == undefined){
-                    console.log("undefined")
                     userData.workoutStats.bestSetIdsForExercises[exerciseId] = newSetId
                 }else{
-                    console.log("defined")
                     const bestSet = data.sets.find(set => set.setId === exerciseBestSet)
 
                     // If a set is better than another is detirmined by calculating the one rep max, using the Baechle Equation, which is as follows:
@@ -393,9 +385,6 @@ function generateExercises(linkedList, data, currentUserId){
                 }
                 userData.workoutStats.totalWeight = Number(userData.workoutStats.totalWeight) + Number(weight)
     
-                console.log(userData)
-                console.log(exerciseBestSet)
-                console.log("bestSet")
             }) 
                 const logCell = document.createElement("td")
                 logCell.appendChild(logButton)
