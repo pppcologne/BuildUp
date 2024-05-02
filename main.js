@@ -137,10 +137,10 @@ function renderSettingsView(){
 
 //button to refresh page
 const refreshButton = document.createElement("button")
-refreshButton.innerHTML = "Refresh"
-refreshButton.className = "refreshButton"
-refreshButton.addEventListener("click",() => {window.location.href=window.location.href}, false)
-document.body.appendChild(refreshButton)
+// refreshButton.innerHTML = "Refresh"
+// refreshButton.className = "refreshButton"
+// refreshButton.addEventListener("click",() => {window.location.href=window.location.href}, false)
+// document.body.appendChild(refreshButton)
 
 //button to remove Current User page
 const removeCurrentUser = document.createElement("button")
@@ -150,11 +150,11 @@ removeCurrentUser.addEventListener("click",() => {localStorage.removeItem("curre
 document.body.appendChild(removeCurrentUser)
 
 //button to add Current User page
-const setUser = document.createElement("button")
-setUser.innerHTML = "Set User"
-setUser.className = "setUser"
-setUser.addEventListener("click",() => {localStorage.setItem("currentUser", 1);window.location.href=window.location.href}, false)
-document.body.appendChild(setUser)
+// const setUser = document.createElement("button")
+// setUser.innerHTML = "Set User"
+// setUser.className = "setUser"
+// setUser.addEventListener("click",() => {localStorage.setItem("currentUser", 1);window.location.href=window.location.href}, false)
+// document.body.appendChild(setUser)
 
 
 

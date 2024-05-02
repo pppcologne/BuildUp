@@ -265,6 +265,8 @@ th{
     position: fixed;
     top: 50px;
     left: 10px;
+    background-color: #EE2D37;
+    border: none;
     z-index: 1000;
     width: 100px;
     height: 30px;
